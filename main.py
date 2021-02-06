@@ -5,10 +5,10 @@ while True:
   print("To begin, fill in the below information")
   rounds = int(input("How many rounds do you want this game to be out of? Recommended: 5    |    "))
   username = input("Username:  ")
-  searchfile = open("accounts.csv","r")
+  searchfile = open("accounts.txt","r")
   for line in searchfile:
     if username in line:
-      print("Access Granted. You've won X many games")
+      print("Access Granted. Welcome!")
       print("| -------------------------------------- |")
       print("|                                        |")
       print("|           ROCK PAPER SCISSORS          |")
